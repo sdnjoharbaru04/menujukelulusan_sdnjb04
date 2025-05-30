@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown Kelulusan SDN JOHAR BARU 04</title>
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f4ff, #fff8f0);
+      text-align: center;
+      padding: 30px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .logo {
+      width: 120px;
+      margin-bottom: 10px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    .photo {
+      width: 180px;
+      border-radius: 20px;
+      margin: 15px auto;
+      animation: fadeInUp 2s ease-in-out;
+    }
+    h1 {
+      color: #d62828;
+    }
+    .countdown {
+      font-size: 2em;
+      color: #003049;
+      margin: 20px 0;
+    }
+    .message {
+      background: #fff3cd;
+      border: 1px solid #ffeeba;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+<audio autoplay loop>
+  <source src="musik.mp3" type="audio/mpeg">
+  Browser Anda tidak mendukung audio.
+</audio>
+
+
+  <audio autoplay loop>
+    <source src="graduation-background-music-334864.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <img src="logo.png" alt="Logo Sekolah" class="logo" />
+  <h1>Menuju Kelulusan</h1>
+  <h2>SDN JOHAR BARU 04</h2>
+  <p>PENGUMUMAN KELULUSAN SISWA KELAS VI TAHUN PELAJARAN 2024/2025: <strong>2 Juni 2025, pukul 10.00 WIB</strong></p>
+
+  <div class="countdown" id="countdown"></div>
+
+  <div class="message">
+    <img src="kepala-sekolah.png" alt="Kepala Sekolah" class="photo" />
+    <h3>Sambutan Ibu Kepala Sekolah</h3>
+    <p>
+      Anak-anak hebatku, masa depan kalian dimulai dari sini. Nikmati setiap momen penantian ini dengan doa dan semangat. Apapun hasilnya nanti, kalian sudah luar biasa! 🌟
+    </p>
+    <p><strong>– Ibu Siti Hida Farhatun, M.Pd</strong></p>
+  </div>
+
+  <script>
+    const countdownElement = document.getElementById("countdown");
+    const targetDate = new Date("June 2, 2025 08:00:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        countdownElement.innerHTML = "🎉 Selamat! Hari Kelulusan Telah Tiba 🎉";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownElement.innerHTML = `${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>
