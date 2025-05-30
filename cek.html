@@ -44,9 +44,9 @@
     // Initialize flatpickr with date range 2011-2013
     flatpickr("#tanggal_lahir", {
       dateFormat: "Y-m-d",
-      minDate: "2011-01-01",
+      minDate: "2010-01-01",
       maxDate: "2013-12-31",
-      defaultDate: "2011-01-01",
+      defaultDate: "2010-01-01",
       disableMobile: true,
     });
 
@@ -95,10 +95,10 @@
             if (status === "LULUS") {
               showResult(`
                 <div class="alert alert-success" role="alert">
-                  Selamat, <strong>${nama}</strong> dinyatakan <strong>LULUS</strong>.
+                  Selamat, <strong>${nama}</strong> Kamu dinyatakan <strong>LULUS! 🎉</strong>.
                 </div>
                 <div class="alert alert-warning" role="alert">
-                  Silakan hubungi petugas sekolah untuk mendapatkan ijazah dan informasi selanjutnya.
+                    "Ingat, ini baru langkah awal. Terus semangat meraih impianmu! 🌟"
                 </div>
               `);
             } else {
