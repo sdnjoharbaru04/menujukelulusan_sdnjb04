@@ -1,0 +1,548 @@
+[
+    {
+    "nama_siswa": "ABDURROHMAN KAHFI",
+    "nomor_nisn": 3122270882,
+    "tanggal_lahir": "2011-11-05",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "ACHMAD NOERZAIN",
+    "nomor_nisn": 3126533665,
+    "tanggal_lahir": "2012-11-20",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "AISYAH NAJMATUN NISA",
+    "nomor_nisn": 3120262997,
+    "tanggal_lahir": "2012-10-26",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ALVINO RAMADHAN YULISTYAWAN",
+    "nomor_nisn": 3117981832,
+    "tanggal_lahir": "2011-08-06",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "BUNGA AISYAH DESHAM",
+    "nomor_nisn": 125532991,
+    "tanggal_lahir": "2012-11-12",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "CINTA DAVINA FILLANNY",
+    "nomor_nisn": 3129211968,
+    "tanggal_lahir": "2012-09-23",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ISKANDAR ABDULLAH HASAN",
+    "nomor_nisn": 123428429,
+    "tanggal_lahir": "2012-04-11",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "JHONATAN XAVERIUZ HUTABARAT",
+    "nomor_nisn": 126771994,
+    "tanggal_lahir": "2012-06-06",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "JIHAN ARINI ZAHRA",
+    "nomor_nisn": 127144083,
+    "tanggal_lahir": "2012-06-06",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "KAYRA DESTYANI PUTRI",
+    "nomor_nisn": 126745634,
+    "tanggal_lahir": "2012-12-14",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "KEYSA CAMELIA",
+    "nomor_nisn": 3138568197,
+    "tanggal_lahir": "2013-05-02",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "KEYSSA AZZAHRA",
+    "nomor_nisn": 3136072733,
+    "tanggal_lahir": "2013-04-02",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "MALIKHA NAURA",
+    "nomor_nisn": 3129179085,
+    "tanggal_lahir": "2012-05-23",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUHAMMAD AZZAM KHAIRULLAH",
+    "nomor_nisn": 3129139685,
+    "tanggal_lahir": "2012-12-06",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUHAMMAD FAJAR RAMADHAN",
+    "nomor_nisn": 3123561649,
+    "tanggal_lahir": "2012-07-11",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUHAMMAD HAFIDZ TRI ASKAL",
+    "nomor_nisn": 3124762569,
+    "tanggal_lahir": "2012-10-10",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUMTIAZ FAWAIDAH",
+    "nomor_nisn": 122595558,
+    "tanggal_lahir": "2012-10-10",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "NABILA PUTRI RIZKIYANI",
+    "nomor_nisn": 3129200645,
+    "tanggal_lahir": "2012-09-28",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "NAFA DWI APRILLYA",
+    "nomor_nisn": 3138168227,
+    "tanggal_lahir": "2013-04-22",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "NATHANIEL VERNANDES SIAHAAN",
+    "nomor_nisn": 3123268062,
+    "tanggal_lahir": "2012-12-10",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "NIKEN CITRA KIRANA",
+    "nomor_nisn": 3111594552,
+    "tanggal_lahir": "2011-09-02",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "PUTRI NURMALA SARI",
+    "nomor_nisn": 3119816556,
+    "tanggal_lahir": "2011-02-06",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "RADITYA ALFARIZI",
+    "nomor_nisn": 3123788804,
+    "tanggal_lahir": "2012-05-16",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "RAFKI PRATAMA HEPI",
+    "nomor_nisn": 117092653,
+    "tanggal_lahir": "2011-04-11",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "SITI ZAHWA",
+    "nomor_nisn": 3116851717,
+    "tanggal_lahir": "2011-12-10",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "SYAFANA AULIA KHUDORI",
+    "nomor_nisn": 134080985,
+    "tanggal_lahir": "2013-04-26",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "SYAKILA JUNIE",
+    "nomor_nisn": 3126807376,
+    "tanggal_lahir": "2012-06-16",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "VALENTINA ANASTASYA",
+    "nomor_nisn": 138384364,
+    "tanggal_lahir": "2013-02-14",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ZIA NAZLA",
+    "nomor_nisn": 3129222828,
+    "tanggal_lahir": "2012-03-04",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ZOLA FIRMANSYAH",
+    "nomor_nisn": 122383806,
+    "tanggal_lahir": "2012-03-26",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ZULAIKA SOFYAN FAUZIAH",
+    "nomor_nisn": 3121330416,
+    "tanggal_lahir": "2013-06-05",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ABDUL BADAR",
+    "nomor_nisn": 3129204060,
+    "tanggal_lahir": "2012-12-10",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ADE ALIF MAULANA",
+    "nomor_nisn": 3123877189,
+    "tanggal_lahir": "2012-12-27",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "ALFINO",
+    "nomor_nisn": 117865239,
+    "tanggal_lahir": "2011-10-19",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "ALRIEVKY KENZO RAMADHAN",
+    "nomor_nisn": 3124039305,
+    "tanggal_lahir": "2012-06-26",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ALYA ZAKIYA ZAHRA",
+    "nomor_nisn": 3127600160,
+    "tanggal_lahir": "2012-12-21",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ARJUN ABHIZHAR AKBAR",
+    "nomor_nisn": 3131272756,
+    "tanggal_lahir": "2013-01-28",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "CHIKITA ZEINELVA",
+    "nomor_nisn": 123624405,
+    "tanggal_lahir": "2012-12-10",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "DAVINA PUTRI GEANY",
+    "nomor_nisn": 3124776120,
+    "tanggal_lahir": "2012-11-10",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "DITA SALSABILLA",
+    "nomor_nisn": 3128261261,
+    "tanggal_lahir": "2012-08-10",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "FAHREZA ADITYA",
+    "nomor_nisn": 124633580,
+    "tanggal_lahir": "2012-06-15",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "FAQIH AKHBAR",
+    "nomor_nisn": 3131410799,
+    "tanggal_lahir": "2013-01-07",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "FIKRI RIZQULLAH",
+    "nomor_nisn": 121460216,
+    "tanggal_lahir": "2012-02-20",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "GIO VANCO KURNIAWAN",
+    "nomor_nisn": 3128053922,
+    "tanggal_lahir": "2012-09-08",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "GITA AGUSTINA FITRIANI",
+    "nomor_nisn": 3121375457,
+    "tanggal_lahir": "2012-08-19",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "JELITA QURRATU AIN",
+    "nomor_nisn": 3124491029,
+    "tanggal_lahir": "2012-07-03",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "KESYA PUTRI NURDIANTI",
+    "nomor_nisn": 3131723434,
+    "tanggal_lahir": "2013-01-31",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "KHALILA PUTRI HERMAWAN",
+    "nomor_nisn": 125867105,
+    "tanggal_lahir": "2012-11-11",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "KHUSNUL KHATIMAH",
+    "nomor_nisn": 3121969059,
+    "tanggal_lahir": "2012-05-14",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "LUVITA SEPTIANI",
+    "nomor_nisn": 3121778577,
+    "tanggal_lahir": "2012-09-12",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUFIDA SHAFA ALYA",
+    "nomor_nisn": 122753291,
+    "tanggal_lahir": "2012-07-06",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUHAMAD ALKA NOVALDI",
+    "nomor_nisn": 3122914371,
+    "tanggal_lahir": "2012-11-28",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUHAMMAD RAFAEL",
+    "nomor_nisn": 127533721,
+    "tanggal_lahir": "2012-06-11",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "QILAT NUR RAMADHAN",
+    "nomor_nisn": 124361288,
+    "tanggal_lahir": "2012-07-31",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "RAMOS TRIO HAMONANGAN ARITONANG",
+    "nomor_nisn": 119949677,
+    "tanggal_lahir": "2011-04-26",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "RIKI PRAMU DIAS",
+    "nomor_nisn": 3137719797,
+    "tanggal_lahir": "2013-05-25",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "SAFIRA",
+    "nomor_nisn": 3126677695,
+    "tanggal_lahir": "2012-10-14",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "SANIA PUTRI ANGGRAENI",
+    "nomor_nisn": 128131976,
+    "tanggal_lahir": "2012-05-25",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "SUKMAWATI",
+    "nomor_nisn": 3127633310,
+    "tanggal_lahir": "2012-10-15",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "VANESSA ANGELIA PUTRI",
+    "nomor_nisn": 3126962087,
+    "tanggal_lahir": "2012-09-29",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "YOGA FEBRIANSYAH",
+    "nomor_nisn": 3138176778,
+    "tanggal_lahir": "2013-02-07",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ZIDAN SATRIA PRATAMA",
+    "nomor_nisn": 3125457312,
+    "tanggal_lahir": "2012-07-20",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ADITYA PUTRA SETIAWAN",
+    "nomor_nisn": 3137212364,
+    "tanggal_lahir": "2013-05-16",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ALENIO ALVARO",
+    "nomor_nisn": 3112094530,
+    "tanggal_lahir": "2011-09-24",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "AULIA RIZKY AGUSTINA",
+    "nomor_nisn": 3122795706,
+    "tanggal_lahir": "2012-08-25",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "DAFA FIRDAUS",
+    "nomor_nisn": 3138986524,
+    "tanggal_lahir": "2013-01-23",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "FAIZHAL NOVRIAN",
+    "nomor_nisn": 3122437221,
+    "tanggal_lahir": "2012-11-17",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "HAIKAL FARISKY GINTING",
+    "nomor_nisn": 3139702981,
+    "tanggal_lahir": "2013-01-23",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "HANIFAH ROCHMANIA AFIA",
+    "nomor_nisn": 135490019,
+    "tanggal_lahir": "2013-02-06",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "JIHAN ADINDA PUTRI",
+    "nomor_nisn": 3126003792,
+    "tanggal_lahir": "2012-09-05",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "JIHAN TIRTA LESTARI",
+    "nomor_nisn": 3128249182,
+    "tanggal_lahir": "2012-04-30",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "KAINUNA FEBRIANI ALQINDI",
+    "nomor_nisn": 3134163033,
+    "tanggal_lahir": "2013-02-20",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "KAYLA PUTRI TRIANI",
+    "nomor_nisn": 3139950066,
+    "tanggal_lahir": "2013-06-03",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "KEIRA SEEMA NOVARDI",
+    "nomor_nisn": 129883449,
+    "tanggal_lahir": "2012-08-23",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "KEYLLA AZZAHRA",
+    "nomor_nisn": 3139779693,
+    "tanggal_lahir": "2013-04-02",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "KHANSA HUMAIRA GUNAWAN",
+    "nomor_nisn": 3129814415,
+    "tanggal_lahir": "2012-03-04",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "KHANSA ZAHRA AURA ASNA",
+    "nomor_nisn": 3134367022,
+    "tanggal_lahir": "2013-01-04",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "LAMHOT SANJAYA",
+    "nomor_nisn": 103606452,
+    "tanggal_lahir": "2010-04-15",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MARDIAN SAH PUTRA",
+    "nomor_nisn": 3137528629,
+    "tanggal_lahir": "2013-03-13",
+    "hasil_kelulusan": "TIDAK LULUS"
+  },
+  {
+    "nama_siswa": "MAYA CECILIA LESMANA",
+    "nomor_nisn": 3127399884,
+    "tanggal_lahir": "2012-05-07",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MELLY DESTRI AYU",
+    "nomor_nisn": 129331159,
+    "tanggal_lahir": "2012-02-03",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUHAMMAD ABYAN FAKHRI",
+    "nomor_nisn": 3139106986,
+    "tanggal_lahir": "2013-04-25",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUHAMMAD LATHIIF SYAFIQ DAFIULLAH",
+    "nomor_nisn": 3135946811,
+    "tanggal_lahir": "2013-04-13",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUHAMMAD RIZQY PRATAMA",
+    "nomor_nisn": 3112166161,
+    "tanggal_lahir": "2011-10-26",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "MUZAYYAN QUSHAYYI AL HAQ HUMAIRAH TANJUNG",
+    "nomor_nisn": 124507470,
+    "tanggal_lahir": "2012-09-10",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "PRIMA RAMADHAN SITUMORANG",
+    "nomor_nisn": 3125824846,
+    "tanggal_lahir": "2012-08-01",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "REINDRA BUMI SADILLAH",
+    "nomor_nisn": 3125669334,
+    "tanggal_lahir": "2012-07-20",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "REZA ARRAHMAN",
+    "nomor_nisn": 3122704808,
+    "tanggal_lahir": "2012-11-15",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "RIFKI ABDUL AZIS",
+    "nomor_nisn": 3122201238,
+    "tanggal_lahir": "2012-12-06",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "RIZKY ATHA ALFALAH",
+    "nomor_nisn": 3134737690,
+    "tanggal_lahir": "2013-05-23",
+    "hasil_kelulusan": "LULUS"
+  },
+  {
+    "nama_siswa": "ZAHIRA PUTRI PURNAMA",
+    "nomor_nisn": 3114585710,
+    "tanggal_lahir": "2011-09-03",
+    "hasil_kelulusan": "LULUS"
+  }
+]
