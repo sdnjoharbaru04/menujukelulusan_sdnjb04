@@ -4,57 +4,44 @@
   <meta charset="UTF-8" />
   <title>Cek Kelulusan Siswa - Bootstrap</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- flatpickr CSS -->
   <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet" />
-
   <style>
     .logo {
       width: 120px;
-      margin-bottom: 10px;
+      margin: 0 15px 10px;
       animation: fadeInUp 1.5s ease-in-out;
     }
   </style>
 </head>
 <body>
-
-  <!-- Musik latar: Sahabat Kecil -->
   <audio autoplay loop>
     <source src="Sahabat Kecil.mp3" type="audio/mpeg" />
     Browser Anda tidak mendukung elemen audio.
   </audio>
-  
-  <div class="container py-4">
-    
-    <div class="container d-flex justify-content-center align-items-center my-4">
-    <!-- Logo kiri -->
-    <img src="Logo Sekolah" alt="Logo Sekolah" class="logo">
 
-    <!-- Logo atau teks tambahan di kanan -->
-    <img src="Logo Sekolah" alt="Logo Sekolah" class="logo">
-    <!-- Atau bisa diganti teks:
-    <h1 class="ms-3">Nama Sekolah</h1>
-    -->
-  </div>
-<h2 class="mb-2 text-center">INFORMASI KELULUSAN</h2>
-<h2 class="mb-4 text-center">PESERTA DIDIK SDN JOHAR BARU 04</h2>
-<h2 class="text-center"><h2 class="text-center">TAHUN PELAJARAN 2024-2025</h2></h2>
+  <div class="container py-4">
+    <div class="container d-flex justify-content-center align-items-center my-4">
+      <!-- Logo DKI Jakarta -->
+      <img src="logo dki jakarta.png" alt="Logo DKI Jakarta" class="logo" />
+      <!-- Logo SDN Johar Baru 04 -->
+      <img src="logo sekolah.png" alt="Logo SDN Johar Baru 04" class="logo" />
+    </div>
+
+    <h2 class="mb-2 text-center">INFORMASI KELULUSAN</h2>
+    <h2 class="mb-2 text-center">PESERTA DIDIK SDN JOHAR BARU 04</h2>
+    <h2 class="mb-4 text-center fw-bold">TAHUN PELAJARAN 2024-2025</h2>
 
     <form id="formKelulusan" class="mx-auto" style="max-width: 400px;" autocomplete="off" novalidate>
       <div class="mb-3">
         <label for="nisn" class="form-label">Nomor NISN</label>
         <input type="text" class="form-control" id="nisn" name="nisn" maxlength="12" required pattern="\d+" inputmode="numeric" placeholder="Masukkan NISN" />
-        <div class="invalid-feedback">
-          Nomor NISN harus berupa angka dan tidak boleh kosong.
-        </div>
+        <div class="invalid-feedback">Nomor NISN harus berupa angka dan tidak boleh kosong.</div>
       </div>
       <div class="mb-3">
         <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
         <input type="text" class="form-control" id="tanggal_lahir" name="tanggal_lahir" required placeholder="Pilih tanggal lahir" />
-        <div class="invalid-feedback">
-          Harap pilih tanggal lahir.
-        </div>
+        <div class="invalid-feedback">Harap pilih tanggal lahir.</div>
       </div>
       <button type="submit" class="btn btn-primary w-100">Cek Kelulusan</button>
     </form>
@@ -62,13 +49,10 @@
     <div id="result" class="mt-4 mx-auto" style="max-width: 400px;"></div>
   </div>
 
-  <!-- Bootstrap 5 JS bundle (includes Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- flatpickr JS -->
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
   <script>
-    // Initialize flatpickr with date range 2011-2013
     flatpickr("#tanggal_lahir", {
       dateFormat: "Y-m-d",
       minDate: "2010-01-01",
@@ -77,7 +61,6 @@
       disableMobile: true,
     });
 
-    // Bootstrap form validation helper
     (function () {
       'use strict';
       const form = document.getElementById('formKelulusan');
@@ -93,7 +76,6 @@
         const nisn = document.getElementById('nisn').value.trim();
         const tanggalLahir = document.getElementById('tanggal_lahir').value;
 
-        // Extra check: NISN numeric only
         if (!/^\d+$/.test(nisn)) {
           showResult(`<div class="alert alert-danger">Nomor NISN harus berupa angka.</div>`);
           return;
@@ -120,23 +102,9 @@
             const status = matchFull.hasil_kelulusan.toUpperCase();
             const nama = matchFull.nama_siswa;
             if (status === "LULUS") {
-              showResult(`
-                <div class="alert alert-success" role="alert">
-                  Selamat, <strong>${nama}</strong> Kamu dinyatakan <strong>LULUS! 🎉</strong>.
-                </div>
-                <div class="alert alert-warning" role="alert">
-                    "Ingat, ini baru langkah awal. Terus semangat meraih impianmu! 🌟"
-                </div>
-              `);
+              showResult(`<div class="alert alert-success">Selamat, <strong>${nama}</strong> Kamu dinyatakan <strong>LULUS! 🎉</strong>.</div><div class="alert alert-warning">"Ingat, ini baru langkah awal. Terus semangat meraih impianmu! 🌟"</div>`);
             } else {
-              showResult(`
-                <div class="alert alert-danger" role="alert">
-                  Mohon maaf, <strong>${nama}</strong> dinyatakan <strong>tidak gugur</strong>.
-                </div>
-                <div class="alert alert-warning" role="alert">
-                  Silakan hubungi petugas sekolah untuk mendapatkan ijazah dan informasi selanjutnya.
-                </div>
-              `);
+              showResult(`<div class="alert alert-danger">Mohon maaf, <strong>${nama}</strong> dinyatakan <strong>tidak gugur</strong>.</div><div class="alert alert-warning">Silakan hubungi petugas sekolah untuk mendapatkan ijazah dan informasi selanjutnya.</div>`);
             }
           } else if (matchNISN) {
             showResult(`<div class="alert alert-warning">Tanggal lahir tidak sesuai dengan NISN yang dimasukkan.</div>`);
@@ -155,5 +123,9 @@
       }
     })();
   </script>
-<footer style="margin-top: 40px; font-size: 0.9em; color: #666; text-align: center;">© Created with 💗 by SDN Johar Baru 04 Team – Graduation Result Checker Page</footer></body>
+
+  <footer style="margin-top: 40px; font-size: 0.9em; color: #666; text-align: center;">
+    © Created with 💗 by SDN Johar Baru 04 Team – Graduation Result Checker Page
+  </footer>
+</body>
 </html>
