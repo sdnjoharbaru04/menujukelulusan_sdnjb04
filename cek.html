@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<title>Cek Kelulusan Siswa - Bootstrap</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet"/>
+<style>
+    .logo {
+      width: 120px;
+      margin: 0 15px 10px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+<audio autoplay="" loop="">
+<source src="Sahabat Kecil.mp3" type="audio/mpeg"/>
+    Browser Anda tidak mendukung elemen audio.
+  </audio>
+<div class="container py-4">
+<div class="container d-flex justify-content-center align-items-center my-4">
+<!-- Logo DKI Jakarta -->
+<img alt="Logo DKI Jakarta" class="logo" src="logo dki jakarta.png"/>
+<!-- Logo SDN Johar Baru 04 -->
+<img alt="Logo SDN Johar Baru 04" class="logo" src="logo sekolah.png"/>
+</div>
+<h2 class="mb-2 text-center">INFORMASI KELULUSAN</h2>
+<h2 class="mb-2 text-center">PESERTA DIDIK SDN JOHAR BARU 04</h2>
+<h2 class="mb-4 text-center">TAHUN PELAJARAN 2024-2025</h2>
+<form autocomplete="off" class="mx-auto" id="formKelulusan" novalidate="" style="max-width: 400px;">
+<div class="mb-3">
+<label class="form-label" for="nisn">Nomor NISN</label>
+<input class="form-control" id="nisn" inputmode="numeric" maxlength="12" name="nisn" pattern="\d+" placeholder="Masukkan NISN" required="" type="text"/>
+<div class="invalid-feedback">Nomor NISN harus berupa angka dan tidak boleh kosong.</div>
+</div>
+<div class="mb-3">
+<label class="form-label" for="tanggal_lahir">Tanggal Lahir</label>
+<input class="form-control" id="tanggal_lahir" name="tanggal_lahir" placeholder="Pilih tanggal lahir" required="" type="text"/>
+<div class="invalid-feedback">Harap pilih tanggal lahir.</div>
+</div>
+<button class="btn btn-primary w-100" type="submit">Cek Kelulusan</button>
+</form>
+<div class="mt-4 mx-auto" id="result" style="max-width: 400px;"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    flatpickr("#tanggal_lahir", {
+      dateFormat: "Y-m-d",
+      minDate: "2010-01-01",
+      maxDate: "2013-12-31",
+      defaultDate: "2010-01-01",
+      disableMobile: true,
+    });
+
+    (function () {
+      'use strict';
+      const form = document.getElementById('formKelulusan');
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+          return;
+        }
+
+        const nisn = document.getElementById('nisn').value.trim();
+        const tanggalLahir = document.getElementById('tanggal_lahir').value;
+
+        if (!/^\d+$/.test(nisn)) {
+          showResult(`<div class="alert alert-danger">Nomor NISN harus berupa angka.</div>`);
+          return;
+        }
+
+        try {
+          const response = await fetch("siswa_kelulusan.json");
+          if (!response.ok) throw new Error('Gagal memuat data kelulusan');
+          const siswaList = await response.json();
+
+          let matchNISN = null;
+          let matchFull = null;
+
+          siswaList.forEach(siswa => {
+            if (siswa.nomor_nisn === Number(nisn)) {
+              matchNISN = siswa;
+              if (siswa.tanggal_lahir === tanggalLahir) {
+                matchFull = siswa;
+              }
+            }
+          });
+
+          if (matchFull) {
+            const status = matchFull.hasil_kelulusan.toUpperCase();
+            const nama = matchFull.nama_siswa;
+            if (status === "LULUS") {
+              showResult(`<div class="alert alert-success">Selamat, <strong>${nama}</strong> Kamu dinyatakan <strong>LULUS! 🎉</strong>.</div><div class="alert alert-warning">"Ingat, ini baru langkah awal. Terus semangat meraih impianmu! 🌟"</div>`);
+            } else {
+              showResult(`<div class="alert alert-danger">Mohon maaf, <strong>${nama}</strong> dinyatakan <strong>tidak gugur</strong>.</div><div class="alert alert-warning">Silakan hubungi petugas sekolah untuk mendapatkan ijazah dan informasi selanjutnya.</div>`);
+            }
+          } else if (matchNISN) {
+            showResult(`<div class="alert alert-warning">Tanggal lahir tidak sesuai dengan NISN yang dimasukkan.</div>`);
+          } else {
+            showResult(`<div class="alert alert-secondary">Nomor NISN tidak ditemukan di data kelulusan.</div>`);
+          }
+        } catch (error) {
+          showResult(`<div class="alert alert-danger">Terjadi kesalahan saat memuat data kelulusan.</div>`);
+          console.error(error);
+        }
+      }, false);
+
+      function showResult(html) {
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = html;
+      }
+    })();
+  </script>
+<footer style="margin-top: 40px; font-size: 0.9em; color: #666; text-align: center;">
+    © Created with 💗 by SDN Johar Baru 04 Team – Graduation Result Checker Page
+  </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const target = new Date("2025-06-02T10:00:00+07:00");
+  const now = new Date();
+
+  const nisnInput = document.getElementById("nisn");
+  const tanggalInput = document.getElementById("tanggal_lahir");
+  const submitBtn = document.querySelector("button[type='submit']");
+
+  if (now < target) {
+    nisnInput.disabled = true;
+    tanggalInput.disabled = true;
+    submitBtn.disabled = true;
+
+    const notice = document.createElement("div");
+    notice.className = "alert alert-info mt-3 text-center";
+    notice.innerHTML = "Formulir akan aktif pada <strong>Senin, 2 Juni 2025 pukul 10.00 WIB</strong>.";
+    document.querySelector("form").insertAdjacentElement("beforebegin", notice);
+  }
+});
+</script></body>
+</html>
